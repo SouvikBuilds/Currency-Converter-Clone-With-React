@@ -136,6 +136,7 @@ const Container = () => {
                         />
                         <select
                             onChange={(e) => setToInput(e.target.value)}
+                            value={"INR" && toInput}
                             className='px-4 py-2 rounded-lg shadow-lg w-full sm:w-[200px] bg-[#333] text-white'>
                             {currencies.map((cur) => (
                                 <option key={cur.code} value={cur.code}>
